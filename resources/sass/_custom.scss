@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    padding: 0.8em;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 433px;
+}
+
+.jumbotron {
+    padding: 2rem;
+}
+
+.welcome hr {
+    width: 60%;
+    border-top: 2px solid #b4b4b4;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+}
+
+.fa-book {
+    color: blue;
+    font-size: 30px;
+}
+
+.fa-futbol {
+    font-size: 30px;
+}
+
+.fa-leaf {
+    color: green;
+    font-size: 30px;
+}
+
+.three-colum hr {
+    width: 100%;
+    border-top: 1px solid #b4b4b4;
+}
+
+.team hr {
+    width: 36%;
+    border-top: 2px solid #b4b4b4;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+}
+
+.social a {
+    font-size: 60px;
+    padding: 30px;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+footer {
+    background-color: #3A3A3A;
+    color: seashell;
+    padding: 1em;
+}
+
+.footer h6 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.footer hr {
+    width: 30%;
+    border-top: 2px solid #b4b4b4;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+}
+
+.copy_rights {
+    width: 100% !important;
+}
+
+.gallery-card img {
+    min-width: 360px;
+    min-height: 220px !important;
+}
