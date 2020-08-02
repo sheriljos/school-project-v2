@@ -1,6 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Redirect;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,13 +24,10 @@ Route::get('/about', function (){
 });
 
 Route::get('/contact', function (){
-    return view('contact');
+    return view('contact', ['message' => '', 'hasValidationError' => false]);
 });
 
-Route::post('/email', function (){
-    var_dump('email');
-    exit();
-});
+Route::post('/email', 'EmailController@post');
 
 Route::get('/gallery', function(){
     $inside = [

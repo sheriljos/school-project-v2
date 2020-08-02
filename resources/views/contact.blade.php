@@ -46,6 +46,21 @@
 
 <div class="container">
 
+	@if ($hasValidationError)
+		<div class="alert alert-danger">
+			<ul>
+				@foreach ($errors as $key => $value)
+					<li>{{ $value[0] }}</li>
+				@endforeach
+			</ul>
+		</div>
+	@endif
+	@if ($message)
+		<div class="alert alert-info">
+			{{ $message ?? '' }}
+		</div>
+	@endif
+
 <!--- Two Column Section -->
 	<div class="container-fluid pt-3 pb-5">
 		<h3 class="display-5">Contact</h3>
@@ -55,15 +70,15 @@
 					{{ csrf_field() }}
 					<div class="form-group">
 						<label for="name">Name</label>
-						<input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter email">
+						<input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter email">
 					</div>
 					<div class="form-group">
 						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+						<input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
 					</div>
 					<div class="form-group">
 						<label for="message">Message</label>
-						<textarea class="form-control" id="message" rows="5"></textarea>
+						<textarea name="message" class="form-control" id="message" rows="5"></textarea>
 					  </div>
 					<button type="submit" class="btn btn-primary">Submit</button>
 				</form>
